@@ -18,29 +18,29 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    "I'm busy right now. Please talk in a bag and when I come back you can just give me the bag!",
-    "I'm away right now. If you need anything, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!",
-    "You missed me, next time aim better.",
-    "I'll be back in a few minutes and if I'm not...,\nwait longer.",
+    "Sorry bray, ane gak lagi mantengin hp :v",
+    "Sedang tidak membuka telegram :)",
+    "Hola! Kalo ente liat pesan ini, berarti ane lagi gak buka telegram",
+    "Kalo lagi gabut biasanya beberapa menit lagi ane bales. Kalo enggak...,\ntunggu lebih lama. awikwok :v",
     "I'm not here right now, so I'm probably somewhere else.",
     "Roses are red,\nViolets are blue,\nLeave me a message,\nAnd I'll get back to you.",
-    "Sometimes the best things in life are worth waiting for…\nI'll be right back.",
+    "Terkadang menunggu adalah hal yang tepat\nMakanya tunggu ampe ane buka pesan lu napa >:(.",
     "I'll be right back,\nbut if I'm not right back,\nI'll be back later.",
-    "If you haven't figured it out already,\nI'm not here.",
-    "Hello, welcome to my away message, how may I ignore you today?",
+    "I'll tell u something bruh,\nI'm not here. awikwok :V",
+    "Hei hei, welcome to my away message, gimana rasanya menunggu sesuatu yang tak pasti?",
     "I'm away over 7 seas and 7 countries,\n7 waters and 7 continents,\n7 mountains and 7 hills,\n7 plains and 7 mounds,\n7 pools and 7 lakes,\n7 springs and 7 meadows,\n7 cities and 7 neighborhoods,\n7 blocks and 7 houses...\n\nWhere not even your messages can reach me!",
-    "I'm away from the keyboard at the moment, but if you'll scream loud enough at your screen, I might just hear you.",
-    "I went that way\n---->",
-    "I went this way\n<----",
-    "Please leave a message and make me feel even more important than I already am.",
+    "Ane lagi AFK, tapi kalo ente coba teriak di hp ente, mungkin ane bakal denger suara ente :V",
+    "Yah telat dah ente :v\nAne lagi AFK sekarang",
+    "Orang sabar pantadnya lebar\nMakanya tunggu ane baca pesan lu.\nAwikwok :v",
+    "Silahkan tinggalkan pesan. Kalo gak penting, ane baca pas kebetulan buka telegram.\nKalo penting, ya sama ae ane baca pas kebetulan buka telegram.\n awikwok :V",
     "I am not here so stop writing to me,\nor else you will find yourself with a screen full of your own messages.",
-    "If I were here,\nI'd tell you where I am.\n\nBut I'm not,\nso ask me when I return...",
-    "I am away!\nI don't know when I'll be back!\nHopefully a few minutes from now!",
-    "I'm not available right now so please leave your name, number, and address and I will stalk you later.",
-    "Sorry, I'm not here right now.\nFeel free to talk to my userbot as long as you like.\nI'll get back to you later.",
-    "I bet you were expecting an away message!",
-    "Life is so short, there are so many things to do...\nI'm away doing one of them..",
-    "I am not here right now...\nbut if I was...\n\nwouldn't that be awesome?",
+    "Ane lagi AFK sekarang. Kalo mau lansung dibales pesannya, bisa send pulsa 50K ke 0895358957539",
+    "Hang on!\nI'm on my way",
+    "Lagi , silahkan tinggalin nomer, alamat rumah, semua akun sosmed ente. Entar ane stalk kalo gabut",
+    "Sorry bray, ane lagi AFK.\nSilahkan chat ama bot ane kalo lagi gabut.\nEntar ane baca pesan ente pas buka telegram.",
+    "Tjie berharap ane balas yak? :v\n Tapi maap beribu maap ane lagi AFK sekarang",
+    "Hidup ntu singkat bre. Ada banyak hal yang bisa dilakuin\nDan ane lagi ngelakuin salah satu dari hal ntu",
+    "Terkadang kita terlena dengan dunia dan melupakan tujuan untuk hidup. Dan sekarang ane belum baca pesan ente karena lagi tafakkur hidup buat apaan yak tujuannya? :"",
 ]
 
 global USER_AFK  # pylint:disable=E0602
@@ -76,7 +76,7 @@ async def set_afk(afk_e):
     else:
         await afk_e.edit("__Going AFK!__")
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nYou went AFK!")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nAne lagi AFK!")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -97,7 +97,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("I'm no longer AFK.")
+        msg = await notafk.respond("Ane dah gak AFK lagi.")
         time.sleep(3)
         await msg.delete()
         if BOTLOG:
