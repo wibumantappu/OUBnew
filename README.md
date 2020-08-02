@@ -1,10 +1,10 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e35faa6a680f4d66abdffddaad76e418)](http://app.codacy.com/manual/fortifying/OUBnew/dashboard) ![Last Commit](https://img.shields.io/github/last-commit/fortifying/OUBnew/sql-extended) ![Contributors](https://img.shields.io/github/contributors/fortifying/OUBnew?color=LightSlateGrey)
+![Contributors](https://img.shields.io/github/contributors/fortifying/OUBnew?color=LightSlateGrey)
 # Project OUBnew-Fortizer
 
-`
- A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database.
-`
 
+
+
+![Banner](https://telegra.ph/file/0e9ff9ef25be4d059eb4c.jpg)
 ```
 #include <std/disclaimer.h>
 /**
@@ -23,15 +23,15 @@
 
 <p align="center">&nbsp;</p>
 
-## NOT THE BEST ONE, BUT HERE YOU GO
+## BUKAN YANG TERBAIK, TAPI BERUSAHA MENJADI LEBIH BAIK.
 
-## Easy way to deploy
+## Deploy button is here!
 [![Deploy](https://telegra.ph/file/008d8a88e29bd8ed9ece9.png)](https://heroku.com/deploy?template=https://github.com/fortifying/OUBnew/tree/sql-extended)
 
 
 <p align="center">&nbsp;</p>
 
-## How to setup Google Drive
+## Cara Setup GDrive
 [![SetGD](https://telegra.ph/file/fde15d05e4bde3448b01a.png)](https://telegra.ph/How-To-Setup-Google-Drive-04-03)
 
 
@@ -54,6 +54,7 @@ Also join <a href="https://t.me/userbotindo">Userbot INDO🇮🇩</a> Telegram G
 * [kandnub](https://github.com/kandnub) - TG-UserBot
 * [AdekMaulana](https://github.com/adekmaulana) - ProjectBish
 * [Mkaraniya](https://github.com/mkaraniya) - OpenUserBot
+* [Om Heinz](https://github.com/fortifying) - Yang ngajarin
 
 <p align="center">&nbsp;</p>
 <h2 align="center">License</h2>
